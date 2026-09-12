@@ -1,0 +1,504 @@
+:root {
+  --primary-blue: #0B5ED7;
+  /* Siemens/Honeywell Premium Blue */
+  --primary-hover: #0A58CA;
+  /* Darker Blue */
+  --accent-cyan: #00C2FF;
+  /* Tech Cyan */
+  --dark-bg: #071B2F;
+  /* Deep Slate */
+  --dark-blue: #071B2F;
+  /* Deep Slate */
+  --text-main: #1E293B;
+  /* Slate (800) */
+  --text-muted: #64748B;
+  /* Slate (500) */
+  --bg-light: #F5F8FC;
+  /* Slate Light */
+  --bg-white: #ffffff;
+  --white: #ffffff;
+  --border-color: rgba(7, 27, 47, 0.08);
+  --primary-gradient: linear-gradient(135deg, #0B5ED7 0%, #00C2FF 100%);
+  --radius-lg: 20px;
+  --shadow-soft: 0 10px 30px rgba(7, 27, 47, 0.05);
+  --shadow-medium: 0 15px 40px rgba(7, 27, 47, 0.08);
+  --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.breadcrumbs {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.video-section {
+  padding: 75px 0 90px;
+  background-color: var(--bg-light);
+}
+
+.section-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subtitle {
+  color: var(--primary-blue);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.main-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--dark-bg);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.accent-line {
+  width: 70px;
+  height: 4px;
+  background-color: #DC2626;
+  /* Changed to professional red */
+  border-radius: 2px;
+  margin-bottom: 25px;
+}
+
+.header-desc {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+/* =========================================
+   4. VIDEO CARDS & GRID
+   ========================================= */
+.video-grid {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px 0;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+/* Base Card */
+.video-card {
+  flex: 1 1 380px;
+  max-width: 440px;
+  background-color: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--border-color);
+  transition: var(--transition);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 35px rgba(220, 38, 38, 0.25);
+  /* Red glowing shadow */
+  border-color: #DC2626;
+  /* Changed to red hover outline */
+}
+
+/* Thumbnail Area */
+.video-thumb-wrap {
+  position: relative;
+  height: 245px;
+  background-color: #f1f5f9;
+  overflow: hidden;
+}
+
+.video-thumb-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.video-card:hover .video-thumb-wrap img {
+  transform: scale(1.05);
+}
+
+/* Dark Overlay */
+.video-thumb-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(7, 27, 47, 0.25);
+  transition: background 0.3s ease;
+  z-index: 2;
+}
+
+.video-card:hover .video-thumb-overlay {
+  background: rgba(7, 27, 47, 0.45);
+}
+
+/* Category Tag */
+.video-category-tag {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: var(--primary-gradient);
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(11, 94, 215, 0.2);
+}
+
+/* Play Button */
+.video-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65px;
+  height: 65px;
+  background: var(--primary-gradient);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 6px rgba(11, 94, 215, 0.25);
+  z-index: 10;
+  transition: var(--transition);
+}
+
+.video-play-btn i {
+  color: var(--white);
+  font-size: 20px;
+  margin-left: 3px;
+  /* Slightly adjust play icon to center visually */
+}
+
+.video-card:hover .video-play-btn {
+  transform: translate(-50%, -50%) scale(1.1);
+  box-shadow: 0 0 0 10px rgba(11, 94, 215, 0.35);
+}
+
+/* Card Body Text */
+.video-card-body {
+  padding: 25px;
+  text-align: left;
+}
+
+.video-card-body h5 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--dark-bg);
+  margin-bottom: 10px;
+}
+
+.video-card-body p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* =========================================
+   5. VIDEO MODAL POPUP
+   ========================================= */
+.video-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(7, 27, 47, 0.92);
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(8px);
+}
+
+.modal-content {
+  width: 90%;
+  max-width: 1000px;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.modal-content iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.close-modal {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 35px;
+  cursor: pointer;
+  transition: var(--transition);
+  z-index: 10000;
+}
+
+.close-modal:hover {
+  color: var(--accent-cyan);
+  transform: scale(1.1) rotate(90deg);
+}
+
+/* =========================================
+   6. SCROLL ANIMATIONS
+   ========================================= */
+.reveal,
+.reveal-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.active,
+.reveal-up.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay-1 {
+  transition-delay: 0.1s;
+}
+
+.delay-2 {
+  transition-delay: 0.2s;
+}
+
+.delay-3 {
+  transition-delay: 0.3s;
+}
+
+.delay-4 {
+  transition-delay: 0.4s;
+}
+
+.delay-5 {
+  transition-delay: 0.5s;
+}
+
+.delay-6 {
+  transition-delay: 0.6s;
+}
+
+/* =========================================
+   7. RESPONSIVE DESIGN
+   ========================================= */
+@media (max-width: 1240px) {
+  .breadcrumbs {
+    left: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .page-hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .video-thumb-wrap {
+    height: 220px;
+  }
+
+  .video-grid {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    padding: 120px 0 50px 0;
+    min-height: 320px;
+  }
+
+  .page-hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .main-title {
+    font-size: 2.5rem;
+  }
+
+  .breadcrumbs {
+    top: 90px;
+    left: 20px;
+  }
+
+  .video-play-btn {
+    width: 55px;
+    height: 55px;
+  }
+
+  .video-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    max-width: 500px;
+  }
+
+  .video-section {
+    padding: 60px 0 !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-hero {
+    min-height: 270px;
+    padding: 110px 0 40px 0;
+  }
+
+  .page-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .breadcrumbs {
+    top: 85px;
+    left: 20px;
+    font-size: 0.8rem;
+  }
+
+  .video-card-body {
+    padding: 20px;
+  }
+
+  .video-thumb-wrap {
+    height: 200px;
+  }
+
+  .close-modal {
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+  }
+
+  .video-section {
+    padding: 40px 0 !important;
+  }
+}
+
+/* =========================================
+   8. BIG SCREEN & WIDESCREEN RESPONSIVENESS (1400px, 1600px, 1920px)
+   ========================================= */
+@media (min-width: 1400px) {
+  .video-container {
+    max-width: 1360px !important;
+  }
+
+  .video-grid {
+    max-width: 1200px;
+    gap: 35px;
+  }
+
+  .video-card {
+    flex: 1 1 420px;
+    max-width: 480px;
+  }
+
+  .video-thumb-wrap {
+    height: 280px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .video-container {
+    max-width: 1540px !important;
+  }
+
+  .video-grid {
+    max-width: 1350px;
+    gap: 40px;
+  }
+
+  .video-card {
+    flex: 1 1 450px;
+    max-width: 520px;
+  }
+
+  .video-thumb-wrap {
+    height: 320px;
+  }
+
+  .video-card-title {
+    font-size: 1.35rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .video-container {
+    max-width: 1760px !important;
+  }
+
+  .video-grid {
+    max-width: 1550px;
+    gap: 45px;
+  }
+
+  .video-card {
+    flex: 1 1 480px;
+    max-width: 560px;
+  }
+
+  .video-thumb-wrap {
+    height: 350px;
+  }
+
+  .video-card-title {
+    font-size: 1.45rem;
+  }
+}

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow" />
+  <meta name="revisit-after" content="7 days" />
+  <title>Contact Us | Fluid-Tech</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="assets/css/index.css?v=90">
+  <link rel="stylesheet" href="assets/css/contact.css?v=11">
+
+  <link rel="icon" href="assets/images/favicon.webp" type="image/webp">
+
+</head>
+
+<body>
+  <div id="header"></div>
+
+  <!-- ==========================================
+       CONTACT PAGE HERO SECTION
+  ========================================== -->
+  <section class="page-hero-section">
+    <!-- Hero Background Slider -->
+    <div class="page-hero-bg-slider">
+      <div class="header-slide active" style="background-image: url('assets/images/headquarters.webp');"></div>
+      <div class="header-slide" style="background-image: url('assets/images/hero_bg_1.webp?v=8');"></div>
+      <div class="header-slide" style="background-image: url('assets/images/hero_bg_tanker.webp?v=8');"></div>
+    </div>
+
+    <!-- Dark Overlay & Visual Gradients -->
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-grid-pattern"></div>
+    <div class="page-hero-glow glow-left"></div>
+    <div class="page-hero-glow glow-right"></div>
+
+    <div class="container page-hero-container">
+      <div class="page-hero-content reveal-up">
+        
+        <!-- Breadcrumbs -->
+        <nav class="page-breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+          <i class="fa-solid fa-chevron-right breadcrumb-arrow"></i>
+          <span class="current">Contact Us</span>
+        </nav>
+
+        <!-- Main Heading -->
+        <h1 class="page-hero-main-title">
+          Contact <span class="page-hero-title-gradient">Us</span>
+        </h1>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container">
+
+      <div class="contact-layout-grid">
+
+        <!-- Left Side: Dark Industrial Contact Info Panel -->
+        <div class="contact-details-panel reveal-up">
+          <div class="panel-badge-wrap">
+            <span class="panel-tag-pill">SALES &amp; FACTORY UNIT</span>
+          </div>
+
+          <h2 class="panel-company-title">Fluid-Tech</h2>
+          <div class="panel-tagline">PIONEERING PRECISION FLUID AUTOMATION</div>
+
+          <p class="panel-desc-text">
+            Reach out directly to our engineering division or sales office. We respond to all RFQs within 24 business hours.
+          </p>
+
+          <ul class="info-list">
+            <li class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="info-text">
+                <span class="info-label">CALL SALES &amp; SUPPORT</span>
+                <div class="info-links-row">
+                  <a href="tel:+917261962201" class="info-link">+91 72619 62201</a>
+                  <span class="link-divider">/</span>
+                  <a href="tel:+917624857496" class="info-link">+91 76248 57496</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="info-text">
+                <span class="info-label">EMAIL INQUIRY</span>
+                <a href="mailto:fluidtechautomation@gmail.com" class="info-link">fluidtechautomation@gmail.com</a>
+              </div>
+            </li>
+
+            <li class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="info-text">
+                <span class="info-label">MANUFACTURING PLANT &amp; OFFICE</span>
+                <a href="https://maps.google.com/?q=Fluid-Tech,+Alok+Nagari,+Warje,+Pune+-+411058" target="_blank"
+                  rel="noopener noreferrer" class="info-link">Fluid-Tech, Alok Nagari, Warje, Pune – 411 058</a>
+              </div>
+            </li>
+          </ul>
+
+          <div class="contact-socials">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/fluidtech_pune/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Right Side: Clean White Quote Request Form -->
+        <div class="contact-form-panel reveal-up" style="transition-delay: 0.15s;">
+          <div class="form-header-box">
+            <span class="form-tag-pill">REQUEST FOR PROPOSAL</span>
+            <h2 class="form-main-title">Get an Instant Machinery Quote</h2>
+            <p class="form-sub-desc">Select your required machine model below to send your specifications directly to our Pune engineering team.</p>
+          </div>
+
+          <form id="contactForm" novalidate>
+            <div class="form-grid">
+
+              <!-- Full Name -->
+              <div class="form-group">
+                <label for="userName">FULL NAME *</label>
+                <input type="text" id="userName" class="form-control" placeholder="e.g. Rahul Sharma" required>
+                <div class="error-message" id="userNameError">Please enter your name.</div>
+              </div>
+
+              <!-- Email Address -->
+              <div class="form-group">
+                <label for="userEmail">EMAIL ADDRESS *</label>
+                <input type="email" id="userEmail" class="form-control" placeholder="e.g. rahul@company.com" required>
+                <div class="error-message" id="userEmailError">Please enter a valid email.</div>
+              </div>
+
+              <!-- Phone No -->
+              <div class="form-group">
+                <label for="userPhone">PHONE NO *</label>
+                <input type="tel" id="userPhone" class="form-control" placeholder="e.g. 9876543210" required>
+                <div class="error-message" id="userPhoneError">Please enter a valid 10-digit phone number.</div>
+              </div>
+
+              <!-- Address -->
+              <div class="form-group">
+                <label for="userAddress">ADDRESS</label>
+                <input type="text" id="userAddress" class="form-control" placeholder="e.g. Pune, Maharashtra" required>
+                <div class="error-message" id="userAddressError">Please enter your address.</div>
+              </div>
+
+              <!-- Subject -->
+              <div class="form-group full-width">
+                <label for="userSubject">SUBJECT *</label>
+                <input type="text" id="userSubject" class="form-control" placeholder="e.g. Inquiry about packing machine" required>
+                <div class="error-message" id="userSubjectError">Please enter a subject.</div>
+              </div>
+
+              <!-- Select Machinery Type -->
+              <div class="form-group full-width select-group">
+                <label for="userTopic">SELECT MACHINERY TYPE *</label>
+                <select id="userTopic" class="form-control" required>
+                  <option value="" disabled selected>-- Choose machine model --</option>
+                  <option value="Positive Displacement Flow Meters (FT2300)">Series FT2300 Positive Displacement Flow Meter</option>
+                  <option value="Automobile Industry Oil Dispenser">Automobile Industry Oil Dispenser</option>
+                  <option value="Industrial Dispenser">Industrial Dispenser</option>
+                  <option value="Tanker Decanting & Unloading System">Tanker Decanting &amp; Unloading System</option>
+                  <option value="DG Fuel Consumption Monitoring System">DG Fuel Consumption Monitoring System</option>
+                  <option value="Dual/Single Channel Oil Filling Machine">Liquid &amp; Oil Filling Machine</option>
+                  <option value="NAS-Class Oil Filtration & Purification System">Oil Filtration &amp; Purification Skid</option>
+                  <option value="PLC / SCADA Automation Panel">PLC / SCADA Automation &amp; Control Panel</option>
+                  <option value="Other / Custom Engineering Solution">Other Custom Automation Skid</option>
+                </select>
+                <div class="error-message" id="userTopicError">Please select a machinery model.</div>
+              </div>
+
+              <!-- Message -->
+              <div class="form-group full-width">
+                <label for="userMessage">YOUR MESSAGE / SPECIFICATIONS *</label>
+                <textarea id="userMessage" class="form-control" placeholder="e.g. Mention required line size, flow rate, liquid medium (diesel, lube oil, solvent), and operating pressure..." required rows="4"></textarea>
+                <div class="error-message" id="userMessageError">Please enter your message or specifications.</div>
+              </div>
+
+            </div>
+
+            <button type="submit" class="submit-btn">
+              <span class="btn-text">GET INSTANT QUOTE <i class="fa-solid fa-arrow-right btn-icon"></i></span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="location-hours-grid">
+
+      <!-- 1. Map Section -->
+      <!-- The 't=k' parameter in the URL forces Satellite View -->
+      <div class="map-container reveal-up">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3158.5089432220766!2d73.7936667!3d18.470166699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDI4JzEyLjYiTiA3M8KwNDcnMzcuMiJF!5e1!3m2!1sen!2sin!4v1781864918236!5m2!1sen!2sin"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+      </div>
+
+      <!-- 2. Business Hours Card -->
+      <div class="hours-card reveal-up" style="transition-delay: 0.2s;">
+
+        <div class="hours-header">
+          <h3>Business Hours</h3>
+          <!-- ID added for JavaScript to update dynamically -->
+          <div id="storeStatusBadge" class="status-badge open">
+            <span style="color: green;" class="dot"></span>
+            <span id="storeStatusText">Open Now</span>
+          </div>
+        </div>
+
+        <div class="schedule-list">
+          <div class="schedule-row">
+            <span style="color: #0c386d;">Monday – Saturday</span>
+            <strong style="color: #0c386d;">9:30 AM to 6:30 PM</strong>
+          </div>
+
+          <hr class="divider">
+
+          <div class="schedule-row">
+            <span style="color: #0c386d;">Sunday</span>
+            <strong style="color: #0c386d;" class="text-red">Holiday</strong>
+          </div>
+        </div>
+
+        <div class="emergency-box">
+          <i class="fa-solid fa-headset"></i>
+          <p>24/7 Emergency support available via WhatsApp for our AMC clients.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="assets/js/contact.js?v=2"></script>
+  <script src="assets/js/main.js?v=8"></script>
+</body>
+
+</html>

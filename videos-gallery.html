@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow" />
+  <meta name="revisit-after" content="7 days" />
+  <title>Video Gallery | Fluid-Tech</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="assets/css/index.css?v=90">
+  <link rel="stylesheet" href="assets/css/videos.css?v=5">
+  <link rel="icon" href="assets/images/favicon.webp" type="image/webp">
+
+</head>
+
+<body>
+  <div id="header"></div>
+
+  <!-- ==========================================
+       VIDEO GALLERY PAGE HERO SECTION
+  ========================================== -->
+  <section class="page-hero-section">
+    <!-- Hero Background Slider -->
+    <div class="page-hero-bg-slider">
+      <div class="header-slide active" style="background-image: url('assets/images/plc-control.webp');"></div>
+      <div class="header-slide" style="background-image: url('assets/images/hero_bg_automation.webp');"></div>
+      <div class="header-slide" style="background-image: url('assets/images/hero_bg_ft2300.webp');"></div>
+    </div>
+
+    <!-- Dark Overlay & Visual Gradients -->
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-grid-pattern"></div>
+    <div class="page-hero-glow glow-left"></div>
+    <div class="page-hero-glow glow-right"></div>
+
+    <div class="container page-hero-container">
+      <div class="page-hero-content reveal-up">
+        
+        <!-- Breadcrumbs -->
+        <nav class="page-breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+          <i class="fa-solid fa-chevron-right breadcrumb-arrow"></i>
+          <span class="current">Video Gallery</span>
+        </nav>
+
+        <!-- Main Heading -->
+        <h1 class="page-hero-main-title">
+          Video <span class="page-hero-title-gradient">Gallery</span>
+        </h1>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. VIDEO DEMOS SECTION -->
+  <section class="video-section">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="section-header reveal-up">
+        <span class="subtitle">Product Demos</span>
+        <h2 class="main-title">Our Products <span class="text-highlight">In Action</span></h2>
+        <div class="accent-line"></div>
+        <p class="header-desc">Watch demonstrations of our Flow Meters, Oil Filling Machines, and Dispensing Systems.
+        </p>
+      </div>
+
+      <!-- Video Cards Wrapper -->
+      <div class="video-grid">
+
+        <!-- Video Card 1 -->
+        <div class="video-card reveal delay-3">
+          <div class="video-thumb-wrap" data-video="https://youtu.be/0s-B0eLjvGQ"
+            onclick="openVideoModal(this.dataset.video)">
+            <img src="assets/images/video_page1.webp" alt="Centrifugal Pump Demo" title="Centrifugal Pump Demo" loading="lazy" />
+            <div class="video-thumb-overlay"></div>
+            <div class="video-play-btn"><i class="fa-solid fa-play" style="margin-left:3px;"></i></div>
+          </div>
+          <div class="video-card-body">
+            <h5>Mobile fuel dispenser</h5>
+            <p>Complete demonstration of our highly accurate PD Flow Meters and Fuel Flow Measurement solutions.</p>
+          </div>
+        </div>
+
+        <!-- Video Card 2 -->
+        <div class="video-card reveal delay-4">
+          <div class="video-thumb-wrap" data-video="https://youtu.be/dKpkm646Nak"
+            onclick="openVideoModal(this.dataset.video)">
+            <img src="assets/images/video_page2.webp" alt="SCADA Automation Panel" title="SCADA Automation Panel" loading="lazy" />
+            <div class="video-thumb-overlay"></div>
+            <div class="video-play-btn"><i class="fa-solid fa-play" style="margin-left:3px;"></i></div>
+          </div>
+          <div class="video-card-body">
+            <h5>4 Nozzle dispensing system</h5>
+            <p>Watch our precision oil filling machine designed for industrial accuracy and high-speed output.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <div id="videoModal" class="video-modal">
+    <span class="close-modal" onclick="closeVideoModal()"><i class="fa-solid fa-xmark"></i></span>
+    <div class="modal-content">
+      <iframe id="videoPlayer" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="assets/js/videos.js"></script>
+  <script src="assets/js/main.js?v=8"></script>
+</body>
+
+</html>

@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow" />
+  <meta name="revisit-after" content="7 days" />
+  <title>Fluid Tech Home</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Google Fonts - Inter, Poppins, Outfit, Barlow, Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- CSS for the Header and Page -->
+  <link rel="stylesheet" href="assets/css/index.css?v=95">
+
+  <link rel="icon" href="assets/images/favicon.webp" type="image/webp">
+
+</head>
+
+<body>
+
+  <!-- THE FETCH SCRIPT WILL INJECT HEADER.HTML HERE  -->
+  <div id="header"></div>
+
+  <!-- ════════════════════════════════════════════════════════
+       HERO SECTION — Value Proposition
+  ════════════════════════════════════════════════════════ -->
+  <section class="hero-section" id="heroSlider">
+    <!-- Hero Slider Background Images (Slide 1: Flow Meter Unit, Slide 2: Tanker Unloading & Metering, Slide 3: Industrial Automation & Filling, Slide 4: Mobile Oil Dispensing System) -->
+    <div class="hero-slider-track-container">
+      <div class="hero-slide active" style="background-image: url('assets/images/hero_bg_1.webp?v=11');"></div>
+      <div class="hero-slide" style="background-image: url('assets/images/hero_bg_tanker.webp?v=11');"></div>
+      <div class="hero-slide" style="background-image: url('assets/images/hero_bg_3.webp?v=11');"></div>
+      <div class="hero-slide" style="background-image: url('assets/images/hero_bg_4.webp?v=11');"></div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="hero-container">
+      <div class="hero-text-wrapper hero-text-animate-in">
+        <span class="hero-badge"><i class="fas fa-industry"></i> FluidTech - Powering Fluid Management Worldwide.</span>
+        <h1>FluidTech - <span class="hero-gradient-text">Measuring Excellence</span>, Delivering Precision.</h1>
+        <p class="hero-sub">Explore our full range of precision-engineered fluid handling, dispensing &amp; monitoring systems.</p>
+
+        <!-- Capsule Dots Indicator with Left & Right Mini Arrows -->
+        <div class="hero-slider-dots" id="heroSliderDots">
+          <button class="capsule-nav-btn prev" id="capsulePrevBtn" aria-label="Previous Slide"><i
+              class="fa-solid fa-chevron-left"></i></button>
+          <div class="dots-wrapper">
+            <button class="dot active" data-index="0" aria-label="Slide 1"></button>
+            <button class="dot" data-index="1" aria-label="Slide 2"></button>
+            <button class="dot" data-index="2" aria-label="Slide 3"></button>
+            <button class="dot" data-index="3" aria-label="Slide 4"></button>
+          </div>
+          <button class="capsule-nav-btn next" id="capsuleNextBtn" aria-label="Next Slide"><i
+              class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+
+  <section class="about-section" id="aboutSection">
+    <div class="container">
+
+      <!-- Main About Showcase Grid -->
+      <div class="about-main-wrapper reveal-up">
+
+        <!-- Left: Text Column with Pillars, Metrics & Actions -->
+        <div class="about-content-col">
+          <div class="about-eyebrow-tag">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>ABOUT US</span>
+          </div>
+
+          <h2 class="about-title">
+            Engineering Precision in <span class="text-highlight-blue">Process &amp; Flow</span> <span
+              class="text-highlight-red">Automation</span>
+          </h2>
+
+          <div class="about-accent-bar">
+            <span class="bar-blue"></span>
+            <span class="bar-red"></span>
+          </div>
+
+          <p class="about-lead">
+            Fluid-Tech is an eminent designer and manufacturer specializing in high-precision <strong>Flow Measurement
+              Systems</strong>, <strong>Automated Dispensing</strong>, and <strong>Oil Purification</strong> solutions.
+            With complete in-house design, engineering, and fabrication divisions, we serve as a trusted privileged OEM
+            partner to India's leading industrial enterprises.
+          </p>
+
+          <!-- 4 Core Competency Cards Grid -->
+          <div class="about-pillars-grid">
+            <div class="pillar-card">
+              <div class="pillar-icon blue"><i class="fa-solid fa-gauge-high"></i></div>
+              <div class="pillar-text">
+                <h5>Flow Measurement</h5>
+                <p>P.D. Flow Meters, inline sensors &amp; chemical monitoring.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon red"><i class="fa-solid fa-gas-pump"></i></div>
+              <div class="pillar-text">
+                <h5>Automated Dispensing</h5>
+                <p>Tanker decanting, drum filling &amp; batching units.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon cyan"><i class="fa-solid fa-chart-line"></i></div>
+              <div class="pillar-text">
+                <h5>Fuel Audit Systems</h5>
+                <p>Real-time generator &amp; fleet consumption monitoring.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon emerald"><i class="fa-solid fa-filter"></i></div>
+              <div class="pillar-text">
+                <h5>Oil Purification (NAS)</h5>
+                <p>Advanced hydraulic oil filtration &amp; contamination control.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trust Checklist Points -->
+          <div class="about-trust-badges">
+            <div class="trust-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Authorised OEM for 50+ Top Brands</span>
+            </div>
+            <div class="trust-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>200+ Enterprise Clients Across India</span>
+            </div>
+            <div class="trust-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>End-to-End Design to AMC Support</span>
+            </div>
+            <div class="trust-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>20+ Years Certified Engineering Team</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Image Column -->
+        <div class="about-image-col">
+          <div class="about-visual-frame">
+            <div class="about-img-container">
+              <img src="assets/images/About-us.webp" alt="Fluid-Tech engineering leadership team" title="Fluid-Tech engineering leadership team"
+                class="about-main-image" loading="lazy">
+              <div class="about-img-overlay-glow"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Solutions / Capabilities Overview Grid -->
+      <div class="about-solutions-header reveal-up">
+        <span class="sub-header-tag">ENGINEERING DIVISIONS</span>
+        <h3 class="sub-header-title">Our Comprehensive <span class="text-highlight-blue">Product Spectrum</span></h3>
+      </div>
+
+      <div class="about-solutions-grid reveal-up">
+        <!-- Solution Card 1 -->
+        <div class="solution-card">
+          <div class="solution-card-top">
+            <div class="sol-icon-box sol-blue">
+              <i class="fa-solid fa-gauge-simple-high"></i>
+            </div>
+            <span class="sol-tag">DIVISION 01</span>
+          </div>
+          <h4>Flow Measurement &amp; Sensors</h4>
+          <p class="sol-desc">Precision positive displacement and inline flow metering solutions engineered for exact
+            measurement.</p>
+          <ul class="sol-features">
+            <li><i class="fa-solid fa-check"></i> Positive Displacement Flow Meters</li>
+            <li><i class="fa-solid fa-check"></i> Chemical &amp; Solvent Flow Meters</li>
+            <li><i class="fa-solid fa-check"></i> Storage Tank &amp; Inline Sensors</li>
+            <li><i class="fa-solid fa-check"></i> Digital Flow Totalizers</li>
+          </ul>
+          <a href="our-products.html" class="sol-link">Explore Flowmeters <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Solution Card 2 -->
+        <div class="solution-card">
+          <div class="solution-card-top">
+            <div class="sol-icon-box sol-red">
+              <i class="fa-solid fa-gas-pump"></i>
+            </div>
+            <span class="sol-tag">DIVISION 02</span>
+          </div>
+          <h4>Fuel &amp; Fluid Dispensing</h4>
+          <p class="sol-desc">High-capacity automated fuel handling, tanker unloading, and container dispensing systems.
+          </p>
+          <ul class="sol-features">
+            <li><i class="fa-solid fa-check"></i> Tanker Decanting &amp; Unloading</li>
+            <li><i class="fa-solid fa-check"></i> Mobile Fuel Dispensing Units</li>
+            <li><i class="fa-solid fa-check"></i> Generator Fuel Monitoring</li>
+            <li><i class="fa-solid fa-check"></i> Heavy-Duty Diesel Transfer Pumps</li>
+          </ul>
+          <a href="our-products.html" class="sol-link">Explore Dispensing <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Solution Card 3 -->
+        <div class="solution-card">
+          <div class="solution-card-top">
+            <div class="sol-icon-box sol-cyan">
+              <i class="fa-solid fa-sliders"></i>
+            </div>
+            <span class="sol-tag">DIVISION 03</span>
+          </div>
+          <h4>Batching &amp; NAS Purification</h4>
+          <p class="sol-desc">Automated liquid filling machines and advanced hydraulic oil filtration systems for strict
+            cleanliness standards.</p>
+          <ul class="sol-features">
+            <li><i class="fa-solid fa-check"></i> Pre-set Batching Controllers</li>
+            <li><i class="fa-solid fa-check"></i> Oil Filtration Systems (NAS 6/7)</li>
+            <li><i class="fa-solid fa-check"></i> Drum &amp; Bottle Filling Machines</li>
+            <li><i class="fa-solid fa-check"></i> PLC / SCADA Integrated Automation</li>
+          </ul>
+          <a href="our-products.html" class="sol-link">Explore Filtration <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       OUR CORE PRODUCTS SECTION
+  ========================================== -->
+  <section class="featured-products-section">
+    <div class="container">
+
+      <div class="section-header reveal-up text-center">
+        <h2 class="main-title">Our Core <span class="text-highlight">Products</span></h2>
+        <div class="accent-line mx-auto" style="margin: 0 auto 20px auto;"></div>
+        <p class="header-description">
+          Explore our range of high-performance industrial flow measurement and fuel dispensing systems.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Core Products Image Slider -->
+    <div class="hero-slider-section">
+      <div class="hero-slider-container">
+        <button class="slider-arrow-btn prev-btn" id="sliderPrevBtn" aria-label="Previous slide">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div class="hero-slider-wrapper">
+          <div class="hero-slider-track" id="heroSliderTrack">
+
+            <!-- 1. Series FT2300-15 PD Flow Meter -->
+            <div class="hero-slider-card">
+              <div class="slider-card-img-wrap">
+                <img src="assets/images/Series FT2300-15 PD Flow Meter-2.webp" alt="Series FT2300-15 PD Flow Meter" title="Series FT2300-15 PD Flow Meter">
+              </div>
+              <div class="slider-card-overlay">
+                <h4 class="slider-card-title">Series FT2300-15 PD Flow Meter</h4>
+                <a href="pd-flow-meters-1-2-inch.html" class="btn-quote">View Detail</a>
+              </div>
+            </div>
+
+            <!-- 2. Series FT2300-20 PD Flow Meter -->
+            <div class="hero-slider-card">
+              <div class="slider-card-img-wrap">
+                <img src="assets/images/Series FT2300-20 PD Flow Meter.webp" alt="Series FT2300-20 PD Flow Meter" title="Series FT2300-20 PD Flow Meter">
+              </div>
+              <div class="slider-card-overlay">
+                <h4 class="slider-card-title">Series FT2300-20 PD Flow Meter</h4>
+                <a href="pd-flow-meters-3-4-inch.html" class="btn-quote">View Detail</a>
+              </div>
+            </div>
+
+            <!-- 3. Series FT2300-25 PD Flow Meter -->
+            <div class="hero-slider-card">
+              <div class="slider-card-img-wrap">
+                <img src="assets/images/FT2300-25 PD Flow Meter.webp" alt="Series FT2300-25 PD Flow Meter" title="Series FT2300-25 PD Flow Meter">
+              </div>
+              <div class="slider-card-overlay">
+                <h4 class="slider-card-title">Series FT2300-25 PD Flow Meter</h4>
+                <a href="pd-flow-meters-1-inch.html" class="btn-quote">View Detail</a>
+              </div>
+            </div>
+
+            <!-- 4. Series FT2300-40 PD Flow Meter -->
+            <div class="hero-slider-card">
+              <div class="slider-card-img-wrap">
+                <img src="assets/images/Series FT2300-40 PD Flow Meter.webp" alt="Series FT2300-40 PD Flow Meter" title="Series FT2300-40 PD Flow Meter">
+              </div>
+              <div class="slider-card-overlay">
+                <h4 class="slider-card-title">Series FT2300-40 PD Flow Meter</h4>
+                <a href="pd-flow-meters-1-5-inch.html" class="btn-quote">View Detail</a>
+              </div>
+            </div>
+
+            <!-- 5. Series FT2300-50 PD Flow Meter -->
+            <div class="hero-slider-card">
+              <div class="slider-card-img-wrap">
+                <img src="assets/images/FT2300-50-1.webp" alt="Series FT2300-50 PD Flow Meter" title="Series FT2300-50 PD Flow Meter">
+              </div>
+              <div class="slider-card-overlay">
+                <h4 class="slider-card-title">Series FT2300-50 PD Flow Meter</h4>
+                <a href="pd-flow-meters-2-inch.html" class="btn-quote">View Detail</a>
+              </div>
+            </div>
+
+            <!-- 6. Series FT2300-80 PD Flow Meter -->
+            <div class="hero-slider-card">
+              <div class="slider-card-img-wrap">
+                <img src="assets/images/Series FT2300-80.webp" alt="Series FT2300-80 PD Flow Meter" title="Series FT2300-80 PD Flow Meter">
+              </div>
+              <div class="slider-card-overlay">
+                <h4 class="slider-card-title">Series FT2300-80 PD Flow Meter</h4>
+                <a href="pd-flow-meters-3-inch.html" class="btn-quote">View Detail</a>
+              </div>
+            </div>
+
+            <!-- 7. Industrial PD Flow Meter -->
+            <div class="hero-slider-card">
+              <div class="slider-card-img-wrap">
+                <img src="assets/images/PD Flow Meter-1.webp" alt="Industrial PD Flow Meter" title="Industrial PD Flow Meter">
+              </div>
+              <div class="slider-card-overlay">
+                <h4 class="slider-card-title">Industrial PD Flow Meter</h4>
+                <a href="industrial-pd-flow-meters.html" class="btn-quote">View Detail</a>
+              </div>
+            </div>
+
+            <!-- 8. Pharma PD Flow Meter -->
+            <div class="hero-slider-card">
+              <div class="slider-card-img-wrap">
+                <img src="assets/images/Pharma PD Flow Meter-1.webp" alt="Pharma PD Flow Meter" title="Pharma PD Flow Meter">
+              </div>
+              <div class="slider-card-overlay">
+                <h4 class="slider-card-title">Pharma PD Flow Meter</h4>
+                <a href="pharmaceutical-pd-flow-meters.html" class="btn-quote">View Detail</a>
+              </div>
+            </div>
+
+            <!-- 9. Chemical PD Flow Meter -->
+            <div class="hero-slider-card">
+              <div class="slider-card-img-wrap">
+                <img src="assets/images/Chemical PD Flow Meter.webp" alt="Chemical PD Flow Meter" title="Chemical PD Flow Meter">
+              </div>
+              <div class="slider-card-overlay">
+                <h4 class="slider-card-title">Chemical PD Flow Meter</h4>
+                <a href="chemical-pd-flow-meters.html" class="btn-quote">View Detail</a>
+              </div>
+            </div>
+
+            <!-- 10. Tanker Unloading System -->
+            <div class="hero-slider-card">
+              <div class="slider-card-img-wrap">
+                <img src="assets/images/Tanker Unloading System-1.webp" alt="Tanker Unloading System" title="Tanker Unloading System">
+              </div>
+              <div class="slider-card-overlay">
+                <h4 class="slider-card-title">Tanker Unloading System</h4>
+                <a href="tanker-unloading-system.html" class="btn-quote">View Detail</a>
+              </div>
+            </div>
+
+            <!-- 11. DG Fuel Consumption Monitoring System -->
+            <div class="hero-slider-card">
+              <div class="slider-card-img-wrap">
+                <img src="assets/images/DG Fuel.webp" alt="DG Fuel Consumption Monitoring System" title="DG Fuel Consumption Monitoring System">
+              </div>
+              <div class="slider-card-overlay">
+                <h4 class="slider-card-title">DG Fuel Consumption Monitoring System</h4>
+                <a href="dg-fuel-consumption-monitoring-system.html" class="btn-quote">View Detail</a>
+              </div>
+            </div>
+
+            <!-- 12. Pre-Set Batching System -->
+            <div class="hero-slider-card">
+              <div class="slider-card-img-wrap">
+                <img src="assets/images/Pre-set.webp" alt="Pre-Set Batching System" title="Pre-Set Batching System" style="transform: scale(1.25);">
+              </div>
+              <div class="slider-card-overlay">
+                <h4 class="slider-card-title">Pre-Set Batching System</h4>
+                <a href="preset-batching-system.html" class="btn-quote">View Detail</a>
+              </div>
+            </div>
+
+            <!-- 13. Oil Dispensing System -->
+            <div class="hero-slider-card">
+              <div class="slider-card-img-wrap">
+                <img src="assets/images/Oil Dispensing System.webp" alt="Oil Dispensing System" title="Oil Dispensing System">
+              </div>
+              <div class="slider-card-overlay">
+                <h4 class="slider-card-title">Oil Dispensing System</h4>
+                <a href="oil-dispensing-system.html" class="btn-quote">View Detail</a>
+              </div>
+            </div>
+
+            <!-- 14. 20W40 & SAE 90 Oil Dispenser -->
+            <div class="hero-slider-card">
+              <div class="slider-card-img-wrap">
+                <img src="assets/images/20W40 SAE90 Oil Dispenser.webp" alt="20W40 &amp; SAE90 Oil Dispenser" title="20W40 &amp; SAE90 Oil Dispenser">
+              </div>
+              <div class="slider-card-overlay">
+                <h4 class="slider-card-title">20W40 &amp; SAE 90 Oil Dispenser</h4>
+                <a href="oil-dispensing-system-20w40-sae-90.html" class="btn-quote">View Detail</a>
+              </div>
+            </div>
+
+            <!-- 15. Coolant Dispensing System -->
+            <div class="hero-slider-card">
+              <div class="slider-card-img-wrap">
+                <img src="assets/images/Coolant Dispensing System.webp" alt="Coolant Dispensing System" title="Coolant Dispensing System">
+              </div>
+              <div class="slider-card-overlay">
+                <h4 class="slider-card-title">Coolant Dispensing System</h4>
+                <a href="coolant-dispensing-system.html" class="btn-quote">View Detail</a>
+              </div>
+            </div>
+
+            <!-- 16. Industrial Dispenser -->
+            <div class="hero-slider-card">
+              <div class="slider-card-img-wrap">
+                <img src="assets/images/FT3302 Mobile  fuel-2.webp" alt="Industrial Dispenser" title="Industrial Dispenser">
+              </div>
+              <div class="slider-card-overlay">
+                <h4 class="slider-card-title">Industrial Dispenser</h4>
+                <a href="industrial-dispenser.html" class="btn-quote">View Detail</a>
+              </div>
+            </div>
+
+            <!-- 17. Automobile Industry Oil Dispenser -->
+            <div class="hero-slider-card">
+              <div class="slider-card-img-wrap">
+                <img src="assets/images/Series FT3301.webp" alt="Automobile Industry Oil Dispenser" title="Automobile Industry Oil Dispenser">
+              </div>
+              <div class="slider-card-overlay">
+                <h4 class="slider-card-title">Automobile Industry Oil Dispenser</h4>
+                <a href="automobile-oil-dispenser.html" class="btn-quote">View Detail</a>
+              </div>
+            </div>
+
+            <!-- 18. Dual Channel Oil Filling Machine -->
+            <div class="hero-slider-card">
+              <div class="slider-card-img-wrap">
+                <img src="assets/images/Dual-channel-oil-machine.webp" alt="Dual Channel Oil Filling Machine" title="Dual Channel Oil Filling Machine">
+              </div>
+              <div class="slider-card-overlay">
+                <h4 class="slider-card-title">Dual Channel Oil Filling Machine</h4>
+                <a href="dual-channel-oil-filling-machine.html" class="btn-quote">View Detail</a>
+              </div>
+            </div>
+
+            <!-- 19. Single Channel Oil Filling Machine -->
+            <div class="hero-slider-card">
+              <div class="slider-card-img-wrap">
+                <img src="assets/images/Single Channel Oil Filling Machine.webp"
+                  alt="Single Channel Oil Filling Machine" title="Single Channel Oil Filling Machine">
+              </div>
+              <div class="slider-card-overlay">
+                <h4 class="slider-card-title">Single Channel Oil Filling Machine</h4>
+                <a href="single-channel-oil-filling-machine.html" class="btn-quote">View Detail</a>
+              </div>
+            </div>
+
+            <!-- 20. Diesel Tank Water Removal System -->
+            <div class="hero-slider-card">
+              <div class="slider-card-img-wrap">
+                <img src="assets/images/Diesel Tank Water Removal System.webp" alt="Diesel Tank Water Removal System" title="Diesel Tank Water Removal System">
+              </div>
+              <div class="slider-card-overlay">
+                <h4 class="slider-card-title">Diesel Tank Water Removal System</h4>
+                <a href="diesel-tank-water-removal-system.html" class="btn-quote">View Detail</a>
+              </div>
+            </div>
+
+            <!-- 21. Diesel Transfer Pump -->
+            <div class="hero-slider-card">
+              <div class="slider-card-img-wrap">
+                <img src="assets/images/Diesel Transfer Pump.webp" alt="Diesel Transfer Pump" title="Diesel Transfer Pump">
+              </div>
+              <div class="slider-card-overlay">
+                <h4 class="slider-card-title">Diesel Transfer Pump</h4>
+                <a href="our-products.html?product=high-speed-dispensing-unit-120-lpm" class="btn-quote">View Detail</a>
+              </div>
+            </div>
+
+            <!-- 22. PLC Control Panel -->
+            <div class="hero-slider-card">
+              <div class="slider-card-img-wrap">
+                <img src="assets/images/plc-control.webp" alt="PLC Control Panel" title="PLC Control Panel">
+              </div>
+              <div class="slider-card-overlay">
+                <h4 class="slider-card-title">PLC Control Panel</h4>
+                <a href="our-products.html" class="btn-quote">View Detail</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <button class="slider-arrow-btn next-btn" id="sliderNextBtn" aria-label="Next slide">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="text-center mt-4 reveal-up" style="transition-delay: 0.2s;">
+        <a href="our-products.html" class="btn-view-all-products">Explore All Products <i
+            class="fa-solid fa-arrow-right-long"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="services-section">
+    <div class="container">
+
+      <div class="section-header reveal-up">
+        <span class="subtitle">What We Offer</span>
+        <h2 class="main-title">Our Core <span class="text-highlight">Services</span></h2>
+        <div class="accent-line"></div>
+        <p class="header-description">
+          Comprehensive industrial solutions from supply and installation to automation and after-sales support.
+        </p>
+      </div>
+
+      <div class="interactive-services-container">
+
+        <!-- Left Tab Controls -->
+        <div class="services-tab-controls">
+
+          <div class="tab-control-item active" data-service="pumps">
+            <div class="control-icon"><i class="fa-solid fa-droplet"></i></div>
+            <div class="control-text">
+              <h4>Pump Systems</h4>
+              <p>Centrifugal, Gear &amp; Submersible pumps.</p>
+            </div>
+            <i class="fa-solid fa-chevron-right arrow-indicator"></i>
+          </div>
+
+          <div class="tab-control-item" data-service="valves">
+            <div class="control-icon"><i class="fa-solid fa-sliders"></i></div>
+            <div class="control-text">
+              <h4>Valves &amp; Actuation</h4>
+              <p>Control, Solenoid &amp; Actuator solutions.</p>
+            </div>
+            <i class="fa-solid fa-chevron-right arrow-indicator"></i>
+          </div>
+
+          <div class="tab-control-item" data-service="fuel">
+            <div class="control-icon"><i class="fa-solid fa-gas-pump"></i></div>
+            <div class="control-text">
+              <h4>Fuel Handling Process</h4>
+              <p>Unloading, dispensing &amp; monitoring.</p>
+            </div>
+            <i class="fa-solid fa-chevron-right arrow-indicator"></i>
+          </div>
+
+
+
+          <div class="tab-control-item" data-service="automation">
+            <div class="control-icon"><i class="fa-solid fa-microchip"></i></div>
+            <div class="control-text">
+              <h4>PLC / SCADA Automation</h4>
+              <p>Centralized control panel engineering.</p>
+            </div>
+            <i class="fa-solid fa-chevron-right arrow-indicator"></i>
+          </div>
+
+          <div class="tab-control-item" data-service="maintenance">
+            <div class="control-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <div class="control-text">
+              <h4>AMC &amp; Maintenance</h4>
+              <p>Preventive maintenance &amp; priority contracts.</p>
+            </div>
+            <i class="fa-solid fa-chevron-right arrow-indicator"></i>
+          </div>
+
+
+
+        </div>
+
+        <!-- Right Display Panel -->
+        <div class="services-display-panel">
+
+          <!-- Pump Systems Panel -->
+          <div class="service-detail-content active" id="service-pumps">
+            <div class="detail-header">
+              <span class="detail-badge">Fluid Management</span>
+              <h3>Pump Systems Engineering</h3>
+            </div>
+            <p class="detail-description">Comprehensive supply, expert installation, and predictive maintenance of
+              high-performance pumps. Tailored to handle viscous chemicals, oils, water, and industrial fluid
+              transmission processes under demanding plant conditions.</p>
+            <div class="detail-grid">
+              <div class="detail-features">
+                <h5>Core Capabilities</h5>
+                <ul>
+                  <li><i class="fa-solid fa-circle-check"></i> High-viscosity Gear Pumps</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Corrosive-resistant Diaphragm Pumps</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Submersible Fluid Systems</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Precision Peristaltic Pumps</li>
+                </ul>
+              </div>
+              <div class="detail-visual">
+                <div class="visual-glow"></div>
+                <i class="fa-solid fa-droplet visual-icon"></i>
+                <span class="visual-label">PUMP SYSTEMS</span>
+              </div>
+            </div>
+            <div class="detail-actions">
+              <a href="our-products.html" class="btn-detail-action">Explore Products <i
+                  class="fa-solid fa-arrow-right"></i></a>
+              <a href="contact-us.html" class="btn-detail-secondary">Request Quote</a>
+            </div>
+          </div>
+
+          <!-- Valves & Actuation Panel -->
+          <div class="service-detail-content" id="service-valves">
+            <div class="detail-header">
+              <span class="detail-badge">Flow Control</span>
+              <h3>Valves &amp; Actuation Systems</h3>
+            </div>
+            <p class="detail-description">Complete range of premium industrial valves paired with manual, pneumatic, and
+              electric actuators. Engineered for airtight shutoff, precise flow throttling, and seamless integration
+              into automated process loops.</p>
+            <div class="detail-grid">
+              <div class="detail-features">
+                <h5>Core Capabilities</h5>
+                <ul>
+                  <li><i class="fa-solid fa-circle-check"></i> High-performance Ball &amp; Butterfly Valves</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Globe, Gate &amp; Check Valves</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Pneumatic &amp; Electric Actuators</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Fast-acting Solenoid Control Loops</li>
+                </ul>
+              </div>
+              <div class="detail-visual">
+                <div class="visual-glow"></div>
+                <i class="fa-solid fa-sliders visual-icon"></i>
+                <span class="visual-label">FLOW CONTROL</span>
+              </div>
+            </div>
+            <div class="detail-actions">
+              <a href="our-products.html" class="btn-detail-action">Explore Products <i
+                  class="fa-solid fa-arrow-right"></i></a>
+              <a href="contact-us.html" class="btn-detail-secondary">Request Quote</a>
+            </div>
+          </div>
+
+          <!-- Fuel Handling Process Panel -->
+          <div class="service-detail-content" id="service-fuel">
+            <div class="detail-header">
+              <span class="detail-badge">Fuel Automation</span>
+              <h3>Fuel Handling &amp; Process Systems</h3>
+            </div>
+            <p class="detail-description">Comprehensive engineering solutions for automated fuel handling, tanker
+              unloading, precise batch dispensing, and real-time fuel consumption monitoring for industrial diesel
+              generators and fuel depots.</p>
+            <div class="detail-grid">
+              <div class="detail-features">
+                <h5>Core Capabilities</h5>
+                <ul>
+                  <li><i class="fa-solid fa-circle-check"></i> Tanker Unloading &amp; Storage Transfer Systems</li>
+                  <li><i class="fa-solid fa-circle-check"></i> High-Accuracy Mobile &amp; Stationary Fuel Dispensers
+                  </li>
+                  <li><i class="fa-solid fa-circle-check"></i> DG Fuel Consumption Monitoring &amp; Logging</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Preset Batching &amp; Fuel Receipt Recorders</li>
+                </ul>
+              </div>
+              <div class="detail-visual">
+                <div class="visual-glow"></div>
+                <i class="fa-solid fa-gas-pump visual-icon"></i>
+                <span class="visual-label">FUEL HANDLING</span>
+              </div>
+            </div>
+            <div class="detail-actions">
+              <a href="our-products.html" class="btn-detail-action">Explore Products <i
+                  class="fa-solid fa-arrow-right"></i></a>
+              <a href="contact-us.html" class="btn-detail-secondary">Request Quote</a>
+            </div>
+          </div>
+
+
+          <!-- PLC / SCADA Automation Panel -->
+          <div class="service-detail-content" id="service-automation">
+            <div class="detail-header">
+              <span class="detail-badge">Control Systems</span>
+              <h3>PLC &amp; SCADA Process Automation</h3>
+            </div>
+            <p class="detail-description">State-of-the-art process automation engineering. We build customized
+              electrical control panels, configure SCADA host monitoring, and program intuitive HMIs to optimize overall
+              plant productivity.</p>
+            <div class="detail-grid">
+              <div class="detail-features">
+                <h5>Core Capabilities</h5>
+                <ul>
+                  <li><i class="fa-solid fa-circle-check"></i> Custom PLC &amp; VFD Control Panels</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Centralized SCADA Systems Integration</li>
+                  <li><i class="fa-solid fa-circle-check"></i> User-friendly Touch HMI Layouts</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Plant-wide Industrial Communication</li>
+                </ul>
+              </div>
+              <div class="detail-visual">
+                <div class="visual-glow"></div>
+                <i class="fa-solid fa-microchip visual-icon"></i>
+                <span class="visual-label">AUTOMATION</span>
+              </div>
+            </div>
+            <div class="detail-actions">
+              <a href="contact-us.html" class="btn-detail-action">Contact Engineer <i
+                  class="fa-solid fa-arrow-right"></i></a>
+              <a href="about-us.html" class="btn-detail-secondary">Learn More</a>
+            </div>
+          </div>
+
+          <!-- AMC & Maintenance Panel -->
+          <div class="service-detail-content" id="service-maintenance">
+            <div class="detail-header">
+              <span class="detail-badge">Support Contracts</span>
+              <h3>AMC &amp; Priority Maintenance</h3>
+            </div>
+            <p class="detail-description">Annual Maintenance Contracts (AMC) to shield your critical operations from
+              unscheduled downtime. Involves periodic preventive checkups, quick-response breakdown visits, and system
+              performance tuning.</p>
+            <div class="detail-grid">
+              <div class="detail-features">
+                <h5>Core Capabilities</h5>
+                <ul>
+                  <li><i class="fa-solid fa-circle-check"></i> Systematic Preventive Maintenance</li>
+                  <li><i class="fa-solid fa-circle-check"></i> On-demand Priority Emergency Visits</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Flow Meter Calibration &amp; Tuning</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Genuine OEM Spare Parts Supply</li>
+                </ul>
+              </div>
+              <div class="detail-visual">
+                <div class="visual-glow"></div>
+                <i class="fa-solid fa-screwdriver-wrench visual-icon"></i>
+                <span class="visual-label">SUPPORT</span>
+              </div>
+            </div>
+            <div class="detail-actions">
+              <a href="contact-us.html" class="btn-detail-action">Request Quote <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="about-us.html" class="btn-detail-secondary">Learn More</a>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <!-- Tab Controller Script -->
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const tabItems = document.querySelectorAll('.tab-control-item');
+          const detailContents = document.querySelectorAll('.service-detail-content');
+
+          tabItems.forEach(item => {
+            // Instant hover switching
+            item.addEventListener('mouseenter', function () {
+              const targetService = this.getAttribute('data-service');
+
+              tabItems.forEach(t => t.classList.remove('active'));
+              detailContents.forEach(c => c.classList.remove('active'));
+
+              this.classList.add('active');
+              const activeContent = document.getElementById('service-' + targetService);
+              if (activeContent) {
+                activeContent.classList.add('active');
+              }
+            });
+
+            // Also support click for mobile/tablet layouts
+            item.addEventListener('click', function () {
+              const targetService = this.getAttribute('data-service');
+
+              tabItems.forEach(t => t.classList.remove('active'));
+              detailContents.forEach(c => c.classList.remove('active'));
+
+              this.classList.add('active');
+              const activeContent = document.getElementById('service-' + targetService);
+              if (activeContent) {
+                activeContent.classList.add('active');
+              }
+            });
+          });
+        });
+      </script>
+    </div>
+  </section>
+
+
+  <!-- Clients section -->
+  <section class="section-pad section-dark-2">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <div class="section-eyebrow">Trusted By</div>
+        <h2 class="section-title">Our <span class="accent">Clients</span></h2>
+        <div class="divider-brand mx-auto"></div>
+      </div>
+
+      <div class="client-scroller-wrap reveal delay-1">
+        <div class="client-scroller-track" id="clientScrollerTrack">
+          <div class="client-logo-card">
+            <img src="assets/images/Aditya birla.webp" alt="Aditya Birla" title="Aditya Birla" loading="lazy">
+          </div>
+          <div class="client-logo-card">
+            <img src="assets/images/bailrise industries.webp" alt="Bailrise Industries" title="Bailrise Industries" loading="lazy">
+          </div>
+          <div class="client-logo-card">
+            <img src="assets/images/accord.webp" alt="Accord" title="Accord" loading="lazy">
+          </div>
+          <div class="client-logo-card">
+            <img src="assets/images/CUL.webp" alt="CUL" title="CUL" loading="lazy">
+          </div>
+          <div class="client-logo-card">
+            <img src="assets/images/eka.webp" alt="EKA Mobility" title="EKA Mobility" loading="lazy">
+          </div>
+          <div class="client-logo-card">
+            <img src="assets/images/Infosys.webp" alt="Infosys" title="Infosys" loading="lazy">
+          </div>
+          <div class="client-logo-card">
+            <img src="assets/images/jackson.webp" alt="Jackson" title="Jackson" loading="lazy">
+          </div>
+          <div class="client-logo-card">
+            <img src="assets/images/Oil Max System Pvt Ltd.webp" alt="Oil Max System Pvt Ltd" title="Oil Max System Pvt Ltd" loading="lazy">
+          </div>
+          <div class="client-logo-card">
+            <img src="assets/images/Prestige.webp" alt="Prestige" title="Prestige" loading="lazy">
+          </div>
+          <div class="client-logo-card">
+            <img src="assets/images/shreas.webp" alt="Shreas" title="Shreas" loading="lazy">
+          </div>
+          <div class="client-logo-card">
+            <img src="assets/images/TMI.webp" alt="TMI" title="TMI" loading="lazy">
+          </div>
+          <div class="client-logo-card">
+            <img src="assets/images/VT.webp" alt="VT" title="VT" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div id="footer-placeholder"></div>
+
+  <!--  JS TO FETCH AND INITIALIZE HEADER  -->
+  <script src="assets/js/main.js?v=8"></script>
+</body>
+
+</html>
