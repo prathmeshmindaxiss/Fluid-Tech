@@ -861,3 +861,34 @@ document.addEventListener("DOMContentLoaded", () => {
     }, headerSlideInterval);
   }
 });
+
+// ==========================================
+// 11. Location Accordion Dropdown Toggle
+// ==========================================
+function initLocationAccordion() {
+  const toggleBtn = document.getElementById("locationToggleBtn");
+  const wrapper = document.getElementById("locationAccordion");
+  const btnText = document.getElementById("locationBtnText");
+
+  if (toggleBtn && wrapper && !toggleBtn.dataset.bound) {
+    toggleBtn.dataset.bound = "true";
+    toggleBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      const isOpen = wrapper.classList.toggle("open");
+      toggleBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      if (btnText) {
+        btnText.innerHTML = isOpen
+          ? 'Close <i class="fa-solid fa-chevron-up ms-1"></i>'
+          : 'Expand <i class="fa-solid fa-chevron-down ms-1"></i>';
+      }
+    });
+  }
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initLocationAccordion);
+} else {
+  initLocationAccordion();
+}
+
+
