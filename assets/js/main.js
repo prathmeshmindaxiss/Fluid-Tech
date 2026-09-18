@@ -463,23 +463,19 @@ function initHeroSlider() {
   const slideContent = [
     {
       badge: '<i class="fas fa-industry"></i> FluidTech - Powering Fluid Management Worldwide.',
-      title: 'FluidTech - <span class="hero-gradient-text">Measuring Excellence</span>, Delivering Precision.',
-      sub: 'Explore our full range of precision-engineered fluid handling, dispensing &amp; monitoring systems.'
+      title: 'FluidTech - <span class="hero-gradient-text">Measuring Excellence</span>, Delivering Precision.'
     },
     {
       badge: '<i class="fas fa-truck-droplet"></i> High-Accuracy Tanker Unloading &amp; Fuel Transfer',
-      title: 'Advanced <span class="hero-gradient-text">Fluid Handling</span> &amp; Metering Skids.',
-      sub: 'Engineered for high flow rates, custody transfer, and severe industrial plant duty.'
+      title: 'Advanced <span class="hero-gradient-text">Fluid Handling</span> &amp; Metering Skids.'
     },
     {
       badge: '<i class="fas fa-cogs"></i> Industrial Automation &amp; Process Control Solutions',
-      title: 'Next-Gen <span class="hero-gradient-text">Automation Systems</span> For Modern Industry.',
-      sub: 'Custom-engineered fluid dispensing, monitoring &amp; control systems built for maximum efficiency.'
+      title: 'Next-Gen <span class="hero-gradient-text">Automation Systems</span> For Modern Industry.'
     },
     {
       badge: '<i class="fas fa-gas-pump"></i> Precision Mobile Oil Dispensing Systems',
-      title: 'Smart <span class="hero-gradient-text">Oil Dispensing</span> &amp; Monitoring Units.',
-      sub: 'PLC touchscreen-controlled mobile dispensing systems with real-time flow rate tracking.'
+      title: 'Smart <span class="hero-gradient-text">Oil Dispensing</span> &amp; Monitoring Units.'
     }
   ];
 
@@ -511,7 +507,7 @@ function initHeroSlider() {
         const subEl = heroTextWrapper.querySelector('.hero-sub');
         if (badgeEl) badgeEl.innerHTML = slideContent[currentSlide].badge;
         if (titleEl) titleEl.innerHTML = slideContent[currentSlide].title;
-        if (subEl) subEl.innerHTML = slideContent[currentSlide].sub;
+        if (subEl) subEl.innerHTML = slideContent[currentSlide].sub || '';
       }
 
       heroTextWrapper.classList.add('hero-text-animate-in');
